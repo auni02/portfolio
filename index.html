@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<script>
+  window.addEventListener("scroll", reveal);
+
+  function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+</script>
+
+<body>
+    <header>
+        <a href="#" class="logo">Auni</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#education"> Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#fyp"> Fyp</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpeg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Auni</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hi, I’m <strong>Auni Haziqah</strong><br><br>
+               An IT student with interest in software development and UI design.
+               Passionate about building functional and user-friendly applications.
+               Currently seeking an IT internship to gain real-world experience. </p>
+            <div class="social-icons">
+                <a href="www.linkedin.com/in/auni-haziqah-046380253"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/auni02"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.tiktok.com/@letherbee?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/brouniey_?igsh=MWhpdTJlZ2hjNXYxdQ=="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="haziqahauni96@gmail.com" class="btn">Hire me</a>
+        </div>
+    </section>
+
+<section class="edu-skill reveal" id="education">
+  <div class="education">
+    <h2>Education</h2>
+
+    <div class="item">
+      <h4>International Islamic University Malaysia</h4>
+      <p>Bachelor of Information Technology (Hons)</p>
+      <p>2021 – Present</p>
+    </div>
+
+    <div class="item">
+      <h4>Mahad Al-Zaytun</h4>
+      <p>A-Level in pure science</p>
+      <p>2017 – 2021</p>
+    </div>
+  </div>
+
+  <div class="skills">
+    <h2>Skills</h2>
+    <div class="skill-icons reveal">
+        <a href="#" ><i class="fa-brands fa-html5"></i></a>
+        <a href="#" ><i class="fa-brands fa-css3-alt"></i></a>
+        <a href="#" ><i class="fa-brands fa-js"></i></a>
+        <a href="#"><i class="fa-brands fa-php"></i></a>
+        <a href="#"><i class="fa-brands fa-laravel"></i></a>
+        <a href="#" ><i class="fa-brands fa-python"></i></a>
+        <a href="#" ><i class="fa-brands fa-figma"></i></a>
+        </div>
+        <div class="skill-images reveal">
+        <img src="download.png" alt="Flutter">
+        <img src="mysql.png" alt="MySQL">
+        <img src="touchicon-180.png" alt="firebase">
+    </div>
+</div>
+  </div>
+
+</section>
+
+<section class="project-section" id="projects">
+
+    <!-- Top row -->
+    <div class="figma-top">
+        <div class="figma-images reveal">
+            <img src="DzikirMate (1).png" alt="DzikirMate UI">
+        </div>
+
+        <h2 class="figma-title">Figma</h2>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="figma-bottom">
+        <div class="figma-images reveal">
+            <img src="medreach.png" alt="MedReach UI">
+        </div>
+    </div>
+
+</section>
+
+
+<section class="fyp-content" id="fyp">
+  <div class="fyp-img reveal">
+    <img src="fyp1.png" alt="FYP Showcase">
+  </div>
+</section>
+
+<section class="screen-section" id="screen">
+  <h2 class="screen-title">D-DAY FINAL YEAR PROJECT</h2>
+<div class="screen">
+      <div class="screen-content">
+
+        <div class="fyp-video reveal">
+          <video controls>
+            <source src="movie.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="fyp-image reveal">
+          <img src="showcase.jpeg" alt="FYP Showcase">
+        </div>
+
+      </div>
+    </div>
+    </section>
+</body>
+</html>

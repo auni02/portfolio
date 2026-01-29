@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================
+   2D DESIGN VARIABLES
+===================== */
+:root {
+  --bg-main: black;      /* pastel pink background */
+  --bg-paper: #fff6ec;    /* paper card */
+  --accent: #b04573;      /* pink accent */
+  --ink: #2b2b2b;         /* text */
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* =====================
+   HEADER / NAV
+===================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.6rem 9%;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+nav a {
+  margin-left: 3rem;
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+/* =====================
+   PAPER CARD SECTIONS
+===================== */
+section {
+  background: var(--bg-paper);
+  border-radius: 32px;
+  padding: 90px 80px;
+  margin: 140px auto;
+  max-width: 1200px;
+  box-shadow: 18px 18px 0 rgba(0,0,0,0.15);
+}
+
+/* =====================
+   HOME
+===================== */
+.home {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-img img {
+  width: 300px;
+  border-radius: 28px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.home-content h1 {
+  font-size: 5.2rem;
+}
+
+.home-content h3 {
+  font-size: 2.8rem;
+  margin: 1rem 0;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  max-width: 500px;
+}
+
+span {
+  color: var(--accent);
+}
+
+/* =====================
+   BUTTON (2D STICKER)
+===================== */
+.btn {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 1.4rem 3.6rem;
+  border-radius: 999px;
+  border: 3px solid var(--accent);
+  background: var(--bg-paper);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 6px 6px 0 var(--accent);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 var(--accent);
+}
+
+/* =====================
+   SOCIAL ICONS
+===================== */
+.social-icons a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  justify-content: center;
+  align-items: center;
+  color: var(--accent);
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icons a:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* =====================
+   HEADINGS (HANDDRAWN FEEL)
+===================== */
+h2 {
+  font-size: 4.6rem;
+  color: var(--accent);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 120px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 6px;
+}
+
+.edu-skill { 
+    width: 100%; 
+    background: black; 
+    padding: 120px 9%; 
+    margin: auto; 
+    font-size: medium; } 
+.edu-skill h2 { 
+    font-size: 42px; 
+    color: #f08aa0; 
+    margin-bottom: 30px; } 
+    
+.education, .skills { 
+    flex: 1; } 
+.item {
+     margin-bottom: 25px; } 
+     
+.item h4 { 
+    font-weight: bold; } 
+
+.skill-icons a{ 
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 4rem; 
+    height: 4rem; 
+    background-color: transparent; 
+    border: 0.2rem solid #b04573; 
+    font-size: 2rem; 
+    border-radius: 50%; 
+    margin: 3rem 1.5rem 3rem 0; 
+    transition: 0.3s ease; 
+    color: #b04573; } 
+.skill-images img{ 
+    width: 4rem; 
+    height: 4rem; 
+    border: 0.2rem solid #b04573; 
+    border-radius: 50%; 
+    align-items: center; }
+
+/* =====================
+   PROJECT / FIGMA
+===================== */
+.project-section img,
+.figma-images img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+/* =====================
+   FYP SECTION (2D BOARD)
+===================== */
+.fyp-content {
+  background: #f2b705;
+  border-radius: 36px;
+}
+
+.screen {
+  background: var(--bg-paper);
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+.screen-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.fyp-video video,
+.fyp-image img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 rgba(0,0,0,0.25);
+}
+
+/* =====================
+   SCROLL ANIMATION
+===================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+    padding: 60px 30px;
+  }
+
+  .fyp-video video,
+  .fyp-image img {
+    width: 100%;
+  }
+}
