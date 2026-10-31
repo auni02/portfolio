@@ -1,146 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Auni Haziqah, a fresh graduate software developer experienced in Laravel, Flutter, backend development, and system integration.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+    <title>Auni Haziqah | Software Developer</title>
 </head>
-
-<script>
-  window.addEventListener("scroll", reveal);
-
-  function reveal() {
-    const reveals = document.querySelectorAll(".reveal");
-
-    for (let i = 0; i < reveals.length; i++) {
-      const windowHeight = window.innerHeight;
-      const elementTop = reveals[i].getBoundingClientRect().top;
-      const elementVisible = 100;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      }
-    }
-  }
-</script>
-
 <body>
-    <header>
-        <a href="#" class="logo">Auni</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#education"> Education</a>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <linearGradient id="sparkle-fill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6a8b0"/>
+                <stop offset="1" stop-color="#ee7d7d"/>
+            </linearGradient>
+            <symbol id="sparkle" viewBox="-50 -50 100 100">
+                <path d="M0 -50 C4 -12 12 -4 50 0 C12 4 4 12 0 50 C-4 12 -12 4 -50 0 C-12 -4 -4 -12 0 -50 Z" fill="url(#sparkle-fill)"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <header>
+        <a href="#home" class="logo">Auni</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#fyp"> Fyp</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpeg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Auni</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Hi, I’m <strong>Auni Haziqah</strong><br><br>
-               An IT student with interest in software development and UI design.
-               Passionate about building functional and user-friendly applications.
-               Currently seeking an IT internship to gain real-world experience. </p>
-            <div class="social-icons">
-                <a href="www.linkedin.com/in/auni-haziqah-046380253"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/auni02"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.tiktok.com/@letherbee?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/brouniey_?igsh=MWhpdTJlZ2hjNXYxdQ=="><i class="fa-brands fa-instagram"></i></a>
+
+    <main id="main">
+        <section class="home" id="home">
+            <div class="hero-top">
+                <span>Software Developer</span>
+                <span>Laravel &amp; Flutter</span>
+                <span>Auni Haziqah</span>
             </div>
-            <a href="haziqahauni96@gmail.com" class="btn">Hire me</a>
-        </div>
-    </section>
 
-<section class="edu-skill reveal" id="education">
-  <div class="education">
-    <h2>Education</h2>
+            <div class="hero-title">
+                <p class="hero-year">2026</p>
+                <h1 aria-label="Auni Haziqah, Software Developer Portfolio">Portfolio</h1>
+                <svg class="hero-star" aria-hidden="true"><use href="#sparkle"/></svg>
+            </div>
 
-    <div class="item">
-      <h4>International Islamic University Malaysia</h4>
-      <p>Bachelor of Information Technology (Hons)</p>
-      <p>2021 – Present</p>
-    </div>
+            <div class="hero-stage">
+                <div class="hero-pill" aria-hidden="true"></div>
+                <div class="hero-photo">
+                    <img src="aunihaziqah.png" alt="Auni Haziqah">
+                </div>
+                <span class="cube cube-1" aria-hidden="true">PHP</span>
+                <span class="cube cube-2" aria-hidden="true">Fl</span>
+                <span class="cube cube-3" aria-hidden="true">Py</span>
+                <span class="cube cube-4" aria-hidden="true">JS</span>
+            </div>
 
-    <div class="item">
-      <h4>Mahad Al-Zaytun</h4>
-      <p>A-Level in pure science</p>
-      <p>2017 – 2021</p>
-    </div>
-  </div>
+            <p class="hero-welcome">Welcome</p>
+            <p class="hero-sub">Fresh graduate software developer building web, mobile and backend systems.</p>
+            <div class="hero-actions">
+                <a href="mailto:haziqahauni96@gmail.com" class="btn">Hire Me</a>
+                <a href="resume.html" class="btn btn-secondary">View Resume</a>
+            </div>
 
-  <div class="skills">
-    <h2>Skills</h2>
-    <div class="skill-icons reveal">
-        <a href="#" ><i class="fa-brands fa-html5"></i></a>
-        <a href="#" ><i class="fa-brands fa-css3-alt"></i></a>
-        <a href="#" ><i class="fa-brands fa-js"></i></a>
-        <a href="#"><i class="fa-brands fa-php"></i></a>
-        <a href="#"><i class="fa-brands fa-laravel"></i></a>
-        <a href="#" ><i class="fa-brands fa-python"></i></a>
-        <a href="#" ><i class="fa-brands fa-figma"></i></a>
-        </div>
-        <div class="skill-images reveal">
-        <img src="download.png" alt="Flutter">
-        <img src="mysql.png" alt="MySQL">
-        <img src="touchicon-180.png" alt="firebase">
-    </div>
-</div>
-  </div>
+            <div class="handle-row">
+                <a href="mailto:haziqahauni96@gmail.com">haziqahauni96@gmail.com</a>
+                <a href="https://www.linkedin.com/in/auni-haziqah-046380253" target="_blank" rel="noopener noreferrer">linkedin.com/in/auni-haziqah</a>
+                <a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer">github.com/auni02</a>
+            </div>
+        </section>
 
-</section>
+        <section class="about reveal" id="about">
+            <svg class="sparkle sparkle-tl" aria-hidden="true"><use href="#sparkle"/></svg>
+            <div class="section-heading"><p class="eyebrow">About Me</p><h2>who am i?</h2></div>
+            <div class="box">
+                <p>I am an Information Technology graduate from International Islamic University Malaysia (IIUM), specialising in Information Assurance and Security. My main focus is software development, particularly building practical web and mobile applications.</p>
+            </div>
+            <div class="box">
+                <p>I enjoy working across the development lifecycle, from turning requirements into database-driven features to integrating services and deploying applications on Linux servers.</p>
+            </div>
+            <div class="info-list">
+                <div class="box"><span>Education</span><strong>Bachelor of Information Technology (Hons)</strong></div>
+                <div class="box"><span>Specialisation</span><strong>Information Assurance and Security</strong></div>
+                <div class="box"><span>Development Focus</span><strong>Laravel, Flutter and Backend Systems</strong></div>
+            </div>
+        </section>
 
-<section class="project-section" id="projects">
+        <section class="skills reveal" id="skills">
+            <svg class="sparkle sparkle-br" aria-hidden="true"><use href="#sparkle"/></svg>
+            <div class="section-heading"><p class="eyebrow">Tech Stack</p><h2>tools i work with</h2></div>
+            <div class="skills-grid">
+                <div class="skill-group box"><h3 class="pill">Frontend</h3><p>HTML, CSS, JavaScript, Flutter</p></div>
+                <div class="skill-group box"><h3 class="pill">Backend</h3><p>PHP, Laravel, Python</p></div>
+                <div class="skill-group box"><h3 class="pill">Database</h3><p>MySQL, MariaDB, Firebase</p></div>
+                <div class="skill-group box"><h3 class="pill">Tools</h3><p>Git, GitHub, Docker, Linux, Figma</p></div>
+                <div class="skill-group box"><h3 class="pill">Other</h3><p>MQTT, Blockchain, Hyperledger Fabric, PQC</p></div>
+            </div>
+        </section>
 
-    <!-- Top row -->
-    <div class="figma-top">
-        <div class="figma-images reveal">
-            <img src="DzikirMate (1).png" alt="DzikirMate UI">
-        </div>
+        <section class="experience reveal" id="experience">
+            <svg class="sparkle sparkle-tr" aria-hidden="true"><use href="#sparkle"/></svg>
+            <div class="section-heading"><p class="eyebrow">Work Experience</p><h2>software developer intern</h2></div>
+            <div class="experience-head">
+                <h3>iExploTech</h3>
+                <p class="muted">Software Developer Intern | March 2026 - September 2026</p>
+            </div>
+            <ol class="step-grid">
+                <li class="box">Developed Laravel, Blade, and PHP features for database driven client applications, including login modules and image validation.</li>
+                <li class="box">Supported SIRIM web platform development through interface updates, module development, testing, debugging, and technical documentation.</li>
+                <li class="box">Set up existing Laravel projects on Oracle Linux and worked with Apache configuration.</li>
+                <li class="box">Improved interfaces based on client feedback and created dashboards, mobile UI concepts, flowcharts, and storyboards using Figma and Draw.io.</li>
+                <li class="box">Tested Hyperledger Fabric APIs with multiple users and asset transfers, and explored MQTT publisher/subscriber communication.</li>
+                <li class="box">Researched Google reCAPTCHA, multifactor authentication, blockchain enhancements, and post-quantum cryptography.</li>
+                <li class="box">Participated in client progress meetings, presented updates, and supported tender, patent, and technical documentation.</li>
+            </ol>
 
-        <h2 class="figma-title">Figma</h2>
-    </div>
+            <div class="did-list">
+                <h3>what i have done</h3>
+                <ul>
+                    <li>Deployed Laravel applications on Oracle Linux.</li>
+                    <li>Worked with Apache configuration and application troubleshooting.</li>
+                    <li>Implemented database driven modules using PHP, Laravel, MySQL, and MariaDB.</li>
+                    <li>Integrated MQTT publisher and subscriber communication.</li>
+                    <li>Connected Flutter applications with Firebase and Python-based services.</li>
+                    <li>Tested Hyperledger Fabric APIs using multi-user and asset-transfer scenarios.</li>
+                    <li>Presented technical progress and implemented UI updates from client feedback.</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Bottom row -->
-    <div class="figma-bottom">
-        <div class="figma-images reveal">
-            <img src="medreach.png" alt="MedReach UI">
-        </div>
-    </div>
+        <section class="projects reveal" id="projects">
+            <svg class="sparkle sparkle-tr" aria-hidden="true"><use href="#sparkle"/></svg>
+            <svg class="sparkle sparkle-bl" aria-hidden="true"><use href="#sparkle"/></svg>
+            <div class="section-heading"><p class="eyebrow">Featured Projects</p><h2>what i built</h2></div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="FYP/fyp1.png" alt="Live Stream Pet Donation App interface">
+                    <div class="project-body">
+                        <h3>Live Stream Pet Donation App</h3>
+                        <p>A smart pet-feeding system connecting live stream donations with automated hardware dispensing through Raspberry Pi, Firebase, and Python.</p>
+                        <p class="project-role"><strong>My role:</strong> Designed and developed the Flutter application, Firebase workflow, and hardware communication.</p>
+                        <div class="project-tech"><span>Flutter</span><span>Firebase</span><span>Python</span><span>Raspberry Pi</span></div>
+                        <div class="project-links"><a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub</a><a href="#demo" class="btn btn-small btn-secondary">Demo</a><button type="button" class="btn btn-small btn-secondary details-btn">Details</button></div>
+                    </div>
+                </article>
 
-</section>
+                <article class="project-card">
+                    <img src="laravel%20project/petsitter/pawpal-home.jpg" alt="PawPal Sitters home page" loading="lazy">
+                    <div class="project-body">
+                        <h3>PawPal Sitters</h3>
+                        <p>A pet sitting marketplace where owners find verified sitters by city, service, pet type and daily rate, and animal lovers sign up to earn by caring for pets.</p>
+                        <p class="project-role"><strong>My role:</strong> Built the Laravel web app, including separate owner and sitter registration, sitter search and filters, sitter profiles with reviews, and the sitter approval flow.</p>
+                        <div class="project-tech"><span>Laravel</span><span>Blade</span><span>PHP</span><span>Authentication</span></div>
+                        <div class="project-links"><a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub Profile</a><button type="button" class="btn btn-small btn-secondary details-btn">Details</button></div>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="laravel%20project/petsitter/pawpal-search.jpg" alt="PawPal sitter search with city, service, pet and price filters" loading="lazy">
+                        <img src="laravel%20project/petsitter/pawpal-register.jpg" alt="PawPal pet sitter registration form" loading="lazy">
+                    </div>
+                </article>
 
+                <article class="project-card">
+                    <img src="laravel%20project/TGJ%20Kabinet%20/tgj-home.jpg" alt="TGJ Kabinet home page" loading="lazy">
+                    <div class="project-body">
+                        <h3>TGJ Kabinet</h3>
+                        <p>A bilingual (BM/EN) business website for a custom cabinet maker, with services, a filterable project gallery, a kitchen cabinet price calculator, testimonials, FAQ and WhatsApp contact.</p>
+                        <p class="project-role"><strong>My role:</strong> Developed the Laravel website, including the price calculator, portfolio filters, language switch, and contact section with Google Maps and WhatsApp.</p>
+                        <div class="project-tech"><span>Laravel</span><span>Blade</span><span>PHP</span><span>JavaScript</span></div>
+                        <div class="project-links"><a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub Profile</a><button type="button" class="btn btn-small btn-secondary details-btn">Details</button></div>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="laravel%20project/TGJ%20Kabinet%20/tgj-services.jpg" alt="TGJ Kabinet services section" loading="lazy">
+                        <img src="laravel%20project/TGJ%20Kabinet%20/tgj-portfolio.jpg" alt="TGJ Kabinet filterable portfolio gallery" loading="lazy">
+                        <img src="laravel%20project/TGJ%20Kabinet%20/tgj-calculator.jpg" alt="TGJ Kabinet kitchen cabinet price calculator" loading="lazy">
+                        <img src="laravel%20project/TGJ%20Kabinet%20/tgj-testimonials.jpg" alt="TGJ Kabinet customer testimonials" loading="lazy">
+                        <img src="laravel%20project/TGJ%20Kabinet%20/tgj-contact.jpg" alt="TGJ Kabinet contact section with map" loading="lazy">
+                    </div>
+                </article>
 
-<section class="fyp-content" id="fyp">
-  <div class="fyp-img reveal">
-    <img src="fyp1.png" alt="FYP Showcase">
-  </div>
-</section>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>SIRIM Digi-Sign Work</h3>
+                        <p>Contributed to a Laravel-based SIRIM web platform through application modules, interface improvements, testing, technical research, and Linux environment setup.</p>
+                        <p class="project-role"><strong>My role:</strong> Developed interface and login features, tested and debugged the system, implemented feedback, and presented progress to the client.</p>
+                        <div class="project-tech"><span>Laravel</span><span>Blade</span><span>PHP</span><span>Bootstrap</span><span>Oracle Linux</span></div>
+                        <div class="project-links"><a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub Profile</a><button type="button" class="btn btn-small btn-secondary details-btn">Details</button></div>
+                    </div>
+                </article>
 
-<section class="screen-section" id="screen">
-  <h2 class="screen-title">D-DAY FINAL YEAR PROJECT</h2>
-<div class="screen">
-      <div class="screen-content">
+                <article class="project-card">
+                    <img src="FIGMA/DzikirMate%20(1).png" alt="DzikirMate mobile application design">
+                    <div class="project-body">
+                        <h3>DzikirMate</h3>
+                        <p>A mobile application interface designed to make daily remembrance activities clear, approachable, and easy to follow.</p>
+                        <p class="project-role"><strong>My role:</strong> Created the mobile user experience, screen flow, and visual interface in Figma.</p>
+                        <div class="project-tech"><span>Figma</span><span>UI Design</span><span>Mobile App</span></div>
+                        <div class="project-links"><a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub Profile</a><button type="button" class="btn btn-small btn-secondary details-btn">Details</button></div>
+                    </div>
+                </article>
 
-        <div class="fyp-video reveal">
-          <video controls>
-            <source src="movie.mp4" type="video/mp4">
-          </video>
-        </div>
+                <article class="project-card">
+                    <img src="FIGMA/medreach.png" alt="MedReach healthcare application design">
+                    <div class="project-body">
+                        <h3>MedReach</h3>
+                        <p>A healthcare application interface focused on helping users access medical services through a simple, readable mobile experience.</p>
+                        <p class="project-role"><strong>My role:</strong> Designed the interface, navigation flow, and core healthcare screens.</p>
+                        <div class="project-tech"><span>Figma</span><span>UI Design</span><span>Healthcare</span></div>
+                        <div class="project-links"><a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub Profile</a><button type="button" class="btn btn-small btn-secondary details-btn">Details</button></div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <div class="fyp-image reveal">
-          <img src="showcase.jpeg" alt="FYP Showcase">
-        </div>
+        <section class="demo reveal" id="demo">
+            <div class="section-heading"><p class="eyebrow">Project Demo</p><h2>live stream pet donation app</h2></div>
+            <div class="demo-content">
+                <video controls preload="metadata"><source src="FYP/movie.mp4" type="video/mp4">Your browser does not support the video element.</video>
+                <img src="FYP/showcase.jpeg" alt="Final year project showcase presentation">
+            </div>
+        </section>
 
-      </div>
-    </div>
-    </section>
+        <section class="contact reveal" id="contact">
+            <svg class="sparkle sparkle-bl" aria-hidden="true"><use href="#sparkle"/></svg>
+            <div class="contact-text">
+                <p class="eyebrow">Contact</p>
+                <h2>let's work together</h2>
+                <div class="box">
+                    <p>Looking for a developer for a web, mobile, or backend project?</p>
+                    <p>Send me a message and let's build something useful together!</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="mailto:haziqahauni96@gmail.com" class="box"><i class="fa-solid fa-envelope"></i>haziqahauni96@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/auni-haziqah-046380253" target="_blank" rel="noopener noreferrer" class="box"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/auni02" target="_blank" rel="noopener noreferrer" class="box"><i class="fa-brands fa-github"></i>GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="project-modal" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+        <div class="modal-body"></div>
+    </dialog>
+
+    <footer><span>&copy; 2026 Auni Haziqah </span><span class="signature">Auni</span></footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
